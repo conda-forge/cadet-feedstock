@@ -19,4 +19,4 @@ suitesparse:
 target_platform:
 - win-64
 tbb_devel:
-- '2020'
+- '2021'
