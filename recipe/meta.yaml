@@ -33,6 +33,7 @@ requirements:
     - suitesparse
     - tbb-devel
     - hdf5
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
 
 about:
   home: https://github.com/modsim/cadet
