@@ -10,7 +10,7 @@ source:
   sha256: eaf0f086f4a2fd6801721fc8c426b3e0734f928eeb54031f69aa1a35c3f1d243
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -24,6 +24,7 @@ requirements:
     - superlu  # [not win]
     - suitesparse
     - tbb-devel
+    - mkl
     - hdf5
     - libblas
     - libcblas
@@ -32,6 +33,7 @@ requirements:
     - superlu  # [not win]
     - suitesparse
     - tbb-devel
+    - mkl
     - hdf5
     - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
 
