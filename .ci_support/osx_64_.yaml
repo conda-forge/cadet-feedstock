@@ -16,12 +16,6 @@ cxx_compiler_version:
 - '11'
 hdf5:
 - 1.12.1
-libblas:
-- 3.8 *netlib
-libcblas:
-- 3.8 *netlib
-liblapack:
-- 3.8 *netlib
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mkl:
