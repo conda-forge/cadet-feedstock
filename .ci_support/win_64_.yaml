@@ -7,13 +7,13 @@ channel_targets:
 cxx_compiler:
 - vs2017
 hdf5:
-- 1.12.1
+- 1.12.2
 libblas:
-- 3.8 *netlib
+- 3.9 *netlib
 libcblas:
-- 3.8 *netlib
+- 3.9 *netlib
 liblapack:
-- 3.8 *netlib
+- 3.9 *netlib
 suitesparse:
 - '5'
 target_platform:
