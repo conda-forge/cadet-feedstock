@@ -10,14 +10,14 @@ source:
   sha256: 838ce6c3176038aa7776fcf1fd7427795870833613b6a0a9203dd5a0296299ee
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - git
-    - sysroot_linux-64 2.17  # [linux64]
     - cmake
     - make  # [unix]
   host:
@@ -33,7 +33,6 @@ requirements:
     - suitesparse
     - tbb-devel
     - hdf5
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
 
 about:
   home: https://github.com/modsim/cadet
