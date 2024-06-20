@@ -14,25 +14,26 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}
+    - {{ compiler("c") }}
     - {{ stdlib("c") }}
-    - {{ compiler('cxx') }}
+    - {{ compiler("cxx") }}
     - git
     - cmake
     - make  # [unix]
   host:
     - superlu  # [not win]
     - suitesparse
-    - tbb-devel
-    - mkl
     - hdf5
+    - mkl-devel             # [blas_impl == "mkl"]
+    - libcblas * *_mkl      # [blas_impl == "mkl"]
+    - libcblas              # [blas_impl != "mkl"]
+    - liblapack             # [blas_impl != "mkl"]
+    - tbb-devel             # [enable_threading == "true"]
   run:
     - superlu  # [not win]
     - suitesparse
-    - tbb-devel
-    - libblas * *mkl
-    - mkl
     - hdf5
+    - tbb-devel             # [enable_threading == "true"]
 
 about:
   home: https://github.com/modsim/cadet
