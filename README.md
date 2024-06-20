@@ -33,24 +33,45 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64</td>
+              <td>linux_64_blas_implgeneric</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14306&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_blas_implgeneric" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64</td>
+              <td>linux_64_blas_implmkl</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14306&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_blas_implmkl" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64</td>
+              <td>osx_64_blas_implgeneric</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14306&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_blas_implgeneric" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_blas_implmkl</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14306&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_blas_implmkl" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_blas_implgeneric</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14306&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=win&configuration=win%20win_64_blas_implgeneric" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_blas_implmkl</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14306&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=win&configuration=win%20win_64_blas_implmkl" alt="variant">
                 </a>
               </td>
             </tr>
@@ -182,7 +203,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@jayghoshter](https://github.com/jayghoshter/)
-* [@jazib-hassan-juelich](https://github.com/jazib-hassan-juelich/)
+* [@jbreue16](https://github.com/jbreue16/)
+* [@ronald-jaepel](https://github.com/ronald-jaepel/)
 * [@schmoelder](https://github.com/schmoelder/)
 
