@@ -25,6 +25,7 @@ requirements:
     - suitesparse
     - tbb-devel
     - hdf5
+    - eigen
     - libblas
     - libcblas
     - liblapack
