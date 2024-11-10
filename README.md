@@ -3,13 +3,13 @@ About cadet-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cadet-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/modsim/cadet
+Home: https://github.com/cadet/cadet
 
 Package license: GPL-3.0-or-later
 
 Summary: An open platform for integrated process modelling and simulation
 
-Development: https://github.com/modsim/cadet
+Development: https://github.com/cadet/cadet-core
 
 Documentation: https://cadet.github.io/
 
