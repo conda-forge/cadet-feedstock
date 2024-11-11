@@ -10,7 +10,7 @@ source:
   sha256: 041c0a0c7148041227e4e2fdd942046bf3aa93c9545d6a33f1c3d535de19fc6e
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -36,7 +36,7 @@ requirements:
     - hdf5
 
 about:
-  home: https://github.com/cadet/cadet
+  home: https://github.com/cadet/cadet-core
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
