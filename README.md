@@ -3,7 +3,7 @@ About cadet-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cadet-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/cadet/cadet
+Home: https://github.com/cadet/cadet-core
 
 Package license: GPL-3.0-or-later
 
