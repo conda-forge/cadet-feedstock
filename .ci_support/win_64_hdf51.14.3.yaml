@@ -1,0 +1,24 @@
+c_compiler:
+- vs2019
+c_stdlib:
+- vs
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2019
+hdf5:
+- 1.14.3
+libblas:
+- 3.9 *netlib
+libcblas:
+- 3.9 *netlib
+liblapack:
+- 3.9 *netlib
+suitesparse:
+- '7'
+target_platform:
+- win-64
+tbb_devel:
+- '2021'
