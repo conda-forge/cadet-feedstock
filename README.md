@@ -7,13 +7,16 @@ Home: https://github.com/cadet/cadet-core
 
 Package license: GPL-3.0-or-later
 
-Summary: An open platform for integrated process modelling and simulation
+Summary: CADET-Core: The heart of CADET. A modular, fast, and accurate modeling and simulation framework for biotechnology processes.
 
 Development: https://github.com/cadet/cadet-core
 
 Documentation: https://cadet.github.io/
 
-The CADET software is a fast and accurate solver for a comprehensive model family. Typical applications include (but are not limited to) chromatography, filtration, crystallization, and fermentation. CADET can handle arbitrary sequences and networks of unit operations, including reactors, tanks, tubes, pumps, valves, detectors, etc. The resulting models are solved with state-of-the-art mathematical algorithms and scientific computing techniques.
+CADET-Core is an open-source software platform offering powerful tools for comprehensive modeling and simulation of biotechnology processes, powered by state-of-the-art numerical algorithms.
+CADET-Core supports unit operations such as chromatography, filtration, and crystallization, along with auxiliary components such as hold tanks, tubes, valves, and detectors.
+These elements can be interconnected to form complex networks, supporting closed-loop feedback and flexible structures.
+
 
 Current build status
 ====================
