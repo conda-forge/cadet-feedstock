@@ -1,5 +1,5 @@
 {% set name = "CADET-Core" %}
-{% set version = "5.0.3" %}
+{% set version = "5.0.4-docker02" %}
 
 package:
   name: cadet
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cadet/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ada9e112ef2e9404ac2877b3d7400622e49e4beb94f405da43df973659d9fb78
+  sha256: ab9193fbae9561264eb6452c9b10be44456496daf7bf933cc3a4413ac22d8cf8
 
 build:
   number: 0
@@ -41,7 +41,7 @@ about:
   license_family: GPL
   license_file: LICENSE.txt
   summary: 'CADET-Core: The heart of CADET. A modular, fast, and accurate modeling and simulation framework for biotechnology processes.'
-  description: | 
+  description: |
     CADET-Core is an open-source software platform offering powerful tools for comprehensive modeling and simulation of biotechnology processes, powered by state-of-the-art numerical algorithms. 
     CADET-Core supports unit operations such as chromatography, filtration, and crystallization, along with auxiliary components such as hold tanks, tubes, valves, and detectors. 
     These elements can be interconnected to form complex networks, supporting closed-loop feedback and flexible structures. 
