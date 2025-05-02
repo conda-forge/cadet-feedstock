@@ -3,6 +3,7 @@ if [[ "$CONDA_BUILD_CROSS_COMPILATION" == 1 ]]; then
     mkdir -p build-host
     pushd build-host
 
+    # Switch to build host compiler
     export CC=$CC_FOR_BUILD
     export CXX=$CXX_FOR_BUILD
     export LDFLAGS=${LDFLAGS//$PREFIX/$BUILD_PREFIX}
@@ -22,17 +23,21 @@ if [[ "$CONDA_BUILD_CROSS_COMPILATION" == 1 ]]; then
 
     # No need to compile everything, just templateCodeGen is sufficient
     cmake --build . --target templateCodeGen --parallel ${CPU_COUNT} --config Release
-
-    ls -lah src/build-tools/
   )
+  EXTERNAL_TEMPLATE_CODEGEN=`realpath ./build-host/src/build-tools/templateCodeGen`
+else
+  # Fall back to compiling templateCodeGen as usual (target == build host)
+  EXTERNAL_TEMPLATE_CODEGEN=""
 fi
+
 mkdir build && cd build
-ls -lah ../build-host/src/build-tools
 cmake \
+    ${CMAKE_ARGS} \
     -DCMAKE_PREFIX_PATH=$PREFIX \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_BUILD_TYPE=Release \
     -DENABLE_CADET_MEX=OFF \
+    -DEXTERNAL_TEMPLATE_CODEGEN=$EXTERNAL_TEMPLATE_CODEGEN \
     ..
 make install -j $CPU_COUNT
