@@ -21,11 +21,11 @@ docker_image:
 hdf5:
 - 1.14.3
 libblas:
-- 3.9 *netlib
+- 3.9.* *netlib
 libcblas:
-- 3.9 *netlib
+- 3.9.* *netlib
 liblapack:
-- 3.9 *netlib
+- 3.9.* *netlib
 suitesparse:
 - '7'
 target_platform:
