@@ -1,5 +1,5 @@
 {% set name = "CADET-Core" %}
-{% set version = "5.0.4" %}
+{% set version = "5.1.0" %}
 
 package:
   name: cadet
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cadet/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e1faf79a0424da94093619027021417b34146eb1152969c2a65a648c9d257f81
+  sha256: 057a2695273278963191af8bac459db77c6aeaf412c3022f48dbb7f6227bc062
 
 build:
   number: 0
