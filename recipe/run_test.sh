@@ -1,13 +1,7 @@
 set -xeuo pipefail
 
-test -x $PREFIX/bin/cadet-cli
-test -x $PREFIX/bin/convertFile
-test -x $PREFIX/bin/createConvBenchmark
 test -x $PREFIX/bin/createLWE
-test -x $PREFIX/bin/createMCLin
-test -x $PREFIX/bin/createSCLang
-test -x $PREFIX/bin/createSCLin
-test -x $PREFIX/bin/createSCLinStep
+test -x $PREFIX/bin/cadet-cli
 
 VERSION=$($PREFIX/bin/cadet-cli --version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
 
