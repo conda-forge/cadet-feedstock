@@ -193,6 +193,5 @@ Feedstock Maintainers
 =====================
 
 * [@jbreue16](https://github.com/jbreue16/)
-* [@ronald-jaepel](https://github.com/ronald-jaepel/)
 * [@schmoelder](https://github.com/schmoelder/)
 
