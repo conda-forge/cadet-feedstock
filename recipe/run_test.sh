@@ -3,7 +3,7 @@ set -xeuo pipefail
 test -x $PREFIX/bin/createLWE
 test -x $PREFIX/bin/cadet-cli
 
-VERSION=$($PREFIX/bin/cadet-cli --version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+VERSION=$($PREFIX/bin/cadet-cli --version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+(-alpha\.[0-9]+|a[0-9]+)?')
 
 unameOut="$(uname -s)"
 case "${unameOut}" in
