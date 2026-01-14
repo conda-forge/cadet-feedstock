@@ -81,14 +81,14 @@ Current release info
 Installing cadet
 ================
 
-Installing `cadet` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `cadet` from the `conda-forge/label/cadet-core_dev` channel can be achieved by adding `conda-forge/label/cadet-core_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/cadet-core_dev
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cadet` can be installed with `conda`:
+Once the `conda-forge/label/cadet-core_dev` channel has been enabled, `cadet` can be installed with `conda`:
 
 ```
 conda install cadet
@@ -103,26 +103,26 @@ mamba install cadet
 It is possible to list all of the versions of `cadet` available on your platform with `conda`:
 
 ```
-conda search cadet --channel conda-forge
+conda search cadet --channel conda-forge/label/cadet-core_dev
 ```
 
 or with `mamba`:
 
 ```
-mamba search cadet --channel conda-forge
+mamba search cadet --channel conda-forge/label/cadet-core_dev
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search cadet --channel conda-forge
+mamba repoquery search cadet --channel conda-forge/label/cadet-core_dev
 
 # List packages depending on `cadet`:
-mamba repoquery whoneeds cadet --channel conda-forge
+mamba repoquery whoneeds cadet --channel conda-forge/label/cadet-core_dev
 
 # List dependencies of `cadet`:
-mamba repoquery depends cadet --channel conda-forge
+mamba repoquery depends cadet --channel conda-forge/label/cadet-core_dev
 ```
 
 
