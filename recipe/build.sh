@@ -30,6 +30,11 @@ else
   EXTERNAL_TEMPLATE_CODEGEN=""
 fi
 
+# conda-forge macOS libc++ availability workaround
+if [[ "$target_platform" == osx-* ]]; then
+  export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+fi
+
 mkdir build && cd build
 cmake \
     ${CMAKE_ARGS} \
