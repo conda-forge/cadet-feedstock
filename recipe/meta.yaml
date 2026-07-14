@@ -1,5 +1,5 @@
 {% set name = "CADET-Core" %}
-{% set version = "6.0.0a3" %}   # conda-friendly PEP 440 versioning
+{% set version = "6.0.0a4" %}   # conda-friendly PEP 440 versioning
 
 package:
   name: cadet
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cadet/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 20c7ba474d8ea8d1a2a8f57c97ab96278295ff0c5f3deb7eec89cedc7b3c195c
+  sha256: be10030769b8533da78f238284a877a90554dfb831ec2297321e777197388c94
 
 build:
   number: 0
