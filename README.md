@@ -49,13 +49,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14306&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadet-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -81,31 +74,73 @@ conda config --add channels conda-forge/label/cadet-core_dev
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge/label/cadet-core_dev` channel has been enabled, `cadet` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install cadet
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install cadet
 ```
 
-It is possible to list all of the versions of `cadet` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add cadet
+# for installing globally
+pixi global install cadet
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `cadet` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search cadet --channel conda-forge/label/cadet-core_dev
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search cadet --channel conda-forge/label/cadet-core_dev
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search cadet --channel conda-forge/label/cadet-core_dev
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -117,6 +152,8 @@ mamba repoquery whoneeds cadet --channel conda-forge/label/cadet-core_dev
 # List dependencies of `cadet`:
 mamba repoquery depends cadet --channel conda-forge/label/cadet-core_dev
 ```
+
+</details>
 
 
 About conda-forge
