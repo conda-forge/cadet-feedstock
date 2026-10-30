@@ -37,8 +37,8 @@ requirements:
 
 about:
   home: https://github.com/cadet/cadet-core
-  license: GPL-3.0-or-later
-  license_family: GPL
+  license: AGPL-3.0-or-later
+  license_family: AGPL
   license_file: LICENSE.txt
   summary: 'CADET-Core: The heart of CADET. A modular, fast, and accurate modeling and simulation framework for biotechnology processes.'
   description: | 
